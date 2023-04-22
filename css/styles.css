@@ -1,0 +1,254 @@
+:root {
+  --color-navy: #2e2f42;
+  --color-slate: #434455;
+  --color-text-footer: #f4f4fd;
+  --color-text-white: #ffffff;
+  --acent-color: #4d5ae5;
+  --acent-color-active: #404bbf;
+
+  --background-color-white: #ffffff;
+  --background-color-dark: #2e2f42;
+  --background-color-gris: #f4f4fd;
+  --background-color-light: #8e8f99;
+}
+/**
+  |============================
+  | :root {
+  --color-light-slate: rgba(142, 143, 153, 1);
+  --color-cornflower: rgba(231, 233, 252, 1);
+  --color-navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --color-grey: rgba(46, 47, 66, 0.7);
+  --color-dairy: rgba(252, 252, 252, 1);
+}
+  |============================
+*/
+
+/**
+  |============================
+  | Глобальні стилі
+  |============================
+*/
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+
+  background-color: var(--background-color-white);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/**
+  |============================
+  | Скриті заголовки
+  |============================
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**
+  |============================
+  | Логотип
+  |============================
+*/
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--acent-color);
+}
+.logo .upper-logo {
+  color: var(--color-navy);
+}
+.page-footer .lower-logo {
+  color: var(--color-text-footer);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--acent-color-active);
+}
+
+/**
+  |============================
+  | Навігація
+  |============================
+*/
+.site-nav .link {
+  font-weight: 500;
+  color: var(--color-navy);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
+  color: var(--acent-color-active);
+}
+/*
+.site-nav .link.current {
+  color: var(--acent-color);
+} */
+.address {
+  font-weight: inherit;
+  font-style: normal;
+  color: inherit;
+}
+.address .link:hover,
+.address .link:focus,
+.address .link:active {
+  color: var(--acent-color-active);
+}
+
+/**
+  |============================
+  | Заголовки 
+  |============================
+*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy);
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy);
+}
+
+/**
+  |============================
+  | Кнопка
+  |============================
+*/
+
+.btn {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-text-white);
+  background-color: var(--acent-color);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--acent-color-active);
+}
+
+/**
+  |============================
+  | Герой
+  |============================
+*/
+.page-hero {
+  background-color: var(--background-color-dark);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-text-white);
+}
+
+/**
+  |============================
+  | Секція команди
+  |============================
+*/
+.team.section {
+  background-color: var(--background-color-gris);
+}
+.team.item {
+  background-color: var(--background-color-white);
+}
+
+/**
+  |============================
+  | Галерея
+  |============================
+*/
+
+.gallery .text {
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+}
+
+/**
+    |============================
+    | Кнопки галереї робіт
+    |============================
+  */
+.btn.gallery {
+  color: var(--acent-color);
+  background-color: var(--background-color-gris);
+}
+
+.btn.gallery:hover,
+.btn.gallery:focus {
+  color: var(--color-text-white);
+  background-color: var(--acent-color-active);
+}
+/**
+  |============================
+  | Підвал
+  |============================
+*/
+
+.page-footer {
+  background-color: var(--background-color-dark);
+}
+.footer.text {
+  color: var(--color-text-footer);
+}
+
+/*
+.text-style-small-text {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-link-text {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-transform: none;
+}
+*/
