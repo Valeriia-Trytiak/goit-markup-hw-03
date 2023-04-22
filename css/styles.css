@@ -352,7 +352,9 @@ img {
 |              Галерея
 |==========================================
 */
-
+.page-gallery {
+  padding-bottom: 120px;
+}
 .gallery .text {
   letter-spacing: 0.02em;
   color: var(--color-slate);
