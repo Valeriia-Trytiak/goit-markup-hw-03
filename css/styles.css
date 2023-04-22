@@ -360,6 +360,7 @@ img {
   color: var(--color-slate);
 }
 .gallery .subtitle-text {
+  padding-left: 16px;
   border-right: 1px solid var(--color-cornflower);
   border-bottom: 1px solid var(--color-cornflower);
   border-left: 1px solid var(--color-cornflower);
