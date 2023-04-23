@@ -28,9 +28,9 @@
 */
 
 /**
-  |=======================================
-  | Глобальні стилі  нормалізація та reset
-  |=======================================
+  |========================================================
+  |            Глобальні стилі  нормалізація та reset
+  |========================================================
 */
 
 body {
@@ -69,10 +69,14 @@ img {
   margin: 0;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /**
-  |============================
-  | Контейнер
-  |============================
+  |===========================================
+  |                 Контейнер
+  |===========================================
 */
 
 .container {
@@ -84,9 +88,9 @@ img {
 }
 
 /**
-  |============================
-  | Скриті заголовки
-  |============================
+  |==========================================
+  |                Скриті заголовки
+  |==========================================
 */
 .visually-hidden {
   position: absolute;
@@ -103,17 +107,20 @@ img {
 }
 
 /**
-  |============================
-  | Хедер
-  |============================
+  |========================================
+  |                    Хедер
+  |========================================
 */
+
 .header {
   border-bottom: 1px solid var(--color-cornflower);
 }
+
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .address {
   font-weight: inherit;
   font-style: normal;
@@ -138,10 +145,11 @@ img {
 }
 
 /**
-  |============================
-  | Логотип
-  |============================
+  |======================================
+  |                   Логотип
+  |======================================
 */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -151,19 +159,25 @@ img {
   text-transform: uppercase;
   color: var(--acent-color);
 }
+
 .header .logo {
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
+
   margin-right: 76px;
 }
 
 .page-footer .logo {
   display: block;
+
   margin-bottom: 16px;
 }
+
 .logo .upper-logo {
   color: var(--color-navy);
 }
+
 .page-footer .lower-logo {
   color: var(--color-text-footer);
 }
@@ -174,18 +188,20 @@ img {
 }
 
 /**
-  |============================
-  | Навігація
-  |============================
+  |===================================
+  |               Навігація
+  |===================================
 */
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav.list {
   display: flex;
   gap: 40px;
   align-items: center;
+
   margin-right: 332px;
 }
 
@@ -196,6 +212,7 @@ img {
   font-weight: 500;
   color: var(--color-navy);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active {
@@ -207,12 +224,13 @@ img {
 } */
 
 /**
-  |============================
-  | Заголовки 
-  |============================
+  |===================================
+  |                 Заголовки 
+  |===================================
 */
 .section-title {
   margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -220,6 +238,7 @@ img {
   text-transform: capitalize;
   color: var(--color-navy);
 }
+
 .subtitle {
   margin-bottom: 8px;
 
@@ -231,9 +250,9 @@ img {
 }
 
 /**
-  |============================
-  | Кнопка
-  |============================
+  |==================================
+  |                Кнопка
+  |==================================
 */
 
 .btn {
@@ -255,9 +274,9 @@ img {
 }
 
 /**
-  |============================
-  | Сітки
-  |============================
+  |====================================
+  |                   Сітки
+  |====================================
 */
 
 .card-set {
@@ -265,20 +284,23 @@ img {
   flex-wrap: wrap;
   gap: var(--indent);
 }
+
 .card-sed-item {
-  flex-basis: calc((100% - var(--indent) * var(--items) - 1) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
+
 /**
-  |============================
-  | Герой
-  |============================
+  |=================================
+  |                  Герой
+  |=================================
 */
 .page-hero {
   padding: 188px 0px;
   background-color: var(--background-color-dark);
 }
+
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0px auto 48px;
 
   font-size: 56px;
@@ -287,6 +309,7 @@ img {
   text-align: center;
   color: var(--color-text-white);
 }
+
 .btn.hero {
   display: block;
   min-width: 169px;
@@ -297,45 +320,43 @@ img {
 }
 
 /**
-  |============================
-  | Секція переваг
-  |============================
+  |===================================
+  |             Секція переваг
+  |===================================
 */
-.features.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.features-container {
-  display: flex;
-  align-items: center;
-}
+
 .features.list {
-  display: flex;
-  gap: 24px;
+  --items: 4;
 }
 
 /**
-  |============================
-  | Секція послуг
-  |============================
+  |=================================
+  |                Секція послуг
+  |=================================
 */
+
+.working.section {
+  padding-top: 0px;
+}
+
 .working.item {
-  padding-bottom: 120px;
   border-bottom: 1px solid var(--color-cornflower);
 }
-/**
-  |============================
-  | Секція команди
-  |============================
-*/
-.team.section {
-  padding-bottom: 120px;
 
+/**
+  |=================================
+  |                Секція команди
+  |=================================
+*/
+
+.team.section {
   background-color: var(--background-color-gris);
 }
+
 .team.list {
   --items: 4;
 }
+
 .team.item {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-color-white);
@@ -343,27 +364,44 @@ img {
 
 .subtitle-text {
   padding-top: 32px;
+  padding-right: 16px;
   padding-bottom: 32px;
+  padding-left: 16px;
   text-align: center;
 }
 
 /**
 |==========================================
-|              Галерея
+|                    Галерея
 |==========================================
 */
+
 .page-gallery {
+  padding-top: 96px;
   padding-bottom: 120px;
 }
+
+.gallery.card-set {
+  column-gap: var(--indent);
+  row-gap: 48px;
+}
+/*.gallery-item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+.gallery-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 48px;
+}*/
+
 .gallery .text {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
 .gallery .subtitle-text {
-  padding-left: 16px;
   border-right: 1px solid var(--color-cornflower);
   border-bottom: 1px solid var(--color-cornflower);
   border-left: 1px solid var(--color-cornflower);
+
   text-align: left;
 }
 
@@ -373,8 +411,7 @@ img {
 |========================================
 */
 .category.list {
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   --items: 5;
   justify-content: center;
   align-items: center;
@@ -383,15 +420,19 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
+
   color: var(--acent-color);
   background-color: var(--background-color-gris);
 }
 
 .btn.gallery:hover,
 .btn.gallery:focus {
+  border: 1px solid transparent;
+
   color: var(--color-text-white);
   background-color: var(--acent-color-active);
 }
+
 /**
 |========================================
 |                 Підвал
@@ -408,26 +449,3 @@ img {
   width: 264px;
   color: var(--color-text-footer);
 }
-
-/*
-.text-style-small-text {
-  font-size: 12px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: normal;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  text-transform: none;
-}
-.text-style-link-text {
-  font-size: 12px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: normal;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  text-decoration: underline;
-  text-transform: none;
-}
-*/
