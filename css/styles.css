@@ -195,14 +195,13 @@ img {
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 332px;
 }
 
 .site-nav.list {
   display: flex;
   gap: 40px;
   align-items: center;
-
-  margin-right: 332px;
 }
 
 .site-nav .link {
